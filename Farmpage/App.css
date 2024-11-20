@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #007bff; /* Deep Blue */
+  --secondary-color: #f2f7fd; /* Dark Gray */
+  --accent-color: #bdc3c7; /* Muted Light Gray */
+  --background-light: #50a555; /* Soft Light Background */
+  --background-dark: #389253; /* Dark Background for Footer/Nav */
+  --card-bg: #beb1be; /* White Cards for Clean Look */
+  --text-color: #ffffff; /* Dark Text for High Contrast */
+  --button-bg: #007bff; /* Blue Button */
+  --button-hover-bg: #0056b3; /* Darker Blue on Hover */
+  --button-disabled-bg: #bdc3c7; /* Light Gray when Disabled */
+  --border-radius: 8px; /* Rounded Corners */
+  --shadow: rgba(0, 0, 0, 0.1); /* Soft Shadow */
+ }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background-light);
+  padding: 20px;
+  text-align: center;
+  text-decoration-color: #ffffff;
+}
+
+footer.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-dark);
+  padding: 5px 0;
+}
+
+/* Button Styles */
+button {
+  background-color: darkorange(--button-bg);
+  color: rgb(18, 20, 19);
+  font-size: 10px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button:hover {
+  background-color: coral(--bs-primary-dark);
+}
+
+/* Stats card container styling */
+.game-card-container {
+  background-color: #274d32;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+/* Heading Styles */
+h3{
+  font-size: 15pxpx;
+  margin-bottom: 20px;
+  color: #ffffff(--primary-color);
+ 
+}
+
+p{
+  font-size: 10pxpx;
+  margin-bottom: 20px;
+  color: #ffffff(--primary-color);
+  padding: 10;
+ 
+}
+
+
+.StatsCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-top: var(--bs-gutter-y);
+  color: rgb(227, 230, 233);
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 5;
+  font-size: 10px;
+  color: #fdfeffdc;
+}
+
+li {
+  margin: 10px 0;
+}
+
+
+/* Adjust width of columns inside row */
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%; /* 2 columns per row */
+}
+
+@media (max-width: 768px) {
+  .col-6 {
+    width: 100%; /* Stack elements vertically on smaller screens */
+  }
+}
+
+.Friends-List {
+  padding: 30px 0;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
